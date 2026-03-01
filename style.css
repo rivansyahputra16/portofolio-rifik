@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+}
+
+/* Header */
+header {
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f172a;
+  position: sticky;
+  top: 0;
+}
+
+header h2 {
+  color: #38bdf8;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Section */
+section {
+  padding: 80px 10%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+  color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+/* Hero Layout */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-image img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #38bdf8;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+  transition: 0.3s;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+/* Content Box */
+.content-box {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Timeline */
+.timeline {
+  max-width: 800px;
+  margin: auto;
+}
+
+.timeline-item {
+  background: #1e293b;
+  padding: 20px;
+  border-left: 4px solid #38bdf8;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-item h3 {
+  color: #38bdf8;
+}
+
+.timeline-item span {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* Contact */
+.contact-box p {
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  color: #94a3b8;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+}
